@@ -1,0 +1,14 @@
+name: verify
+
+on:
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "6 5 * * *"
+
+jobs:
+  verify:
+    uses: kapricorn-media/github/.github/workflows/zig-verify.yaml@main
+    with:
+      zig-version: 0.13.0

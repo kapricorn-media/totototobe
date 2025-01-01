@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- - - - - - - - - PAGE METADATA - - - - - - - - -->
+    <title>totototo.be</title>
+    <meta name="description" content="To to to to to to to to to to to">
+    <!-- OpenGraph tags -->
+    <meta property="og:title"       content="totototo.be">
+    <meta property="og:type"        content="website">
+    <!-- <meta property="og:image"       content="https://totototo.be/something.png"> -->
+    <meta property="og:url"         content="https://totototo.be">
+    <meta property="og:description" content="">
+    <!-- Twitter card -->
+    <meta name="twitter:card"           content="summary">
+    <meta name="twitter:url"            content="https://totototo.be">
+    <meta name="twitter:title"          content="totototo.be">
+    <meta name="twitter:description"    content="">
+    <!-- <meta name="twitter:image"          content="https://totototo.be/something.png"> -->
+    <!-- schema.org -->
+    <!-- TODO: ADD TAGS -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <script type="module" src="/js/common.js"></script>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/wasm.js"></script>
+    <script type="module" src="/js/wasm_worker.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="dummyBackground"></div>
+    <script type="module">
+        import {_documentOnLoad} from '/js/main.js';
+        _documentOnLoad();
+    </script>
+</body>
+
+</html>

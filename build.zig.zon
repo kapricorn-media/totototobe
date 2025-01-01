@@ -1,0 +1,11 @@
+.{
+    .name = "update",
+    .version = "0.1.0",
+    .paths = .{""},
+    .dependencies = .{
+        .zigkm_common = .{
+            .url = "https://github.com/kapricorn-media/zigkm-common/archive/4ae219b9067f4d0ea51c4c702947df7a8a3a5c65.tar.gz",
+            .hash = "122062fb97e3923fc855a4c32db9ed03c4bb2035e75db5ab2488f1749b4f0a1ff2cd",
+        },
+    },
+}

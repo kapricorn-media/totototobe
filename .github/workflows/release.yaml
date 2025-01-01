@@ -1,0 +1,16 @@
+name: release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    uses: kapricorn-media/github/.github/workflows/zig-release.yaml@main
+    with:
+      zig-version: 0.13.0
+      package-name: totototobe
+      zig-build-command: server_package
+      package-subdir: server
+      releaseFlag: -Doptimize=ReleaseFast

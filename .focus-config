@@ -1,0 +1,29 @@
+[6]  # Version number. Do not delete.
+
+[[workspace]]
+# These directories and files will be scanned when a workspace is opened so that search etc. works.
+C:\Users\jmric\dev\totototobe
+C:\Users\jmric\zig\0.13.0\files
+C:\Users\jmric\dev\zigkm-common
+
+[[build commands]]
+open_panel_on_build: true
+close_panel_on_success: false
+clear_build_output_before_running: true
+auto_jump_to_error: true
+build_working_dir: C:\Users\jmric\dev\totototobe
+error_regex: ^(?P<file>.+):(?P<line>\d+):(?P<col>\d+): (?P<type>[^:]+): (?P<msg>.*)$
+
+[Debug - Build Server]
+build_command: zigup run 0.13.0 build server_build
+key_binding: F5
+
+[Release - Build Server]
+build_command: zigup run 0.13.0 build -Doptimize=ReleaseFast server_build
+
+[Debug - Test]
+build_command: zigup run 0.13.0 build test
+
+[Clean]
+build_command: cmd /C "rmdir .zig-cache zig-out /q /S"
+key_binding: F12
