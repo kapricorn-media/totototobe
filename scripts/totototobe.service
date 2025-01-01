@@ -1,0 +1,15 @@
+[Unit]
+Description=totototobe
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+WorkingDirectory=/path/to/totototobe
+ExecStart=/path/to/totototobe/totototobe static.bigdata 8000
+
+[Install]
+WantedBy=multi-user.target
