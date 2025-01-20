@@ -19,8 +19,8 @@ const OOM = std.mem.Allocator.Error;
 
 const COLOR_BACKGROUND = m.Vec4.initColorHex("FFFFFF") catch unreachable;
 const COLOR_TEXT = m.Vec4.initColorHex("000000") catch unreachable;
-const COLOR_BUTTON_LESS = m.Vec4.initColorHex("FF0000") catch unreachable;
-const COLOR_BUTTON_MORE = m.Vec4.initColorHex("00FF00") catch unreachable;
+const COLOR_BUTTON_LESS = m.Vec4.initColorHex("ff8585") catch unreachable;
+const COLOR_BUTTON_MORE = m.Vec4.initColorHex("85ff99") catch unreachable;
 
 const REF_SIZE_FONT = 24;
 const REF_SIZE_BUTTON_WIDTH = 48;
